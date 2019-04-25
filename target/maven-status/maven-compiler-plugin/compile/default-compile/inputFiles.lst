@@ -1,5 +1,15 @@
-C:\myprojects\resource-game\src\main\java\makar\resourcegame\TestMain.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\game\Game.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\game\GameResult.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\game\GameResponse.java
 C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\GameServerRequestHandler.java
-C:\myprojects\resource-game\src\main\java\makar\resourcegame\Main.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\GameOverPage.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\game\ResourcePoints.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\game\Player.java
 C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\ResourceGameServer.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\PostRequestBodyParser.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\TestMain.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\game\Round.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\GamePage.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\Main.java
 C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\ResponseBodyCreator.java
+C:\myprojects\resource-game\src\main\java\makar\resourcegame\server\game\PlayerRequest.java

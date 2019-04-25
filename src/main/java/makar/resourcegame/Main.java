@@ -13,10 +13,10 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        int maxRounds = 3;
-        int maxPlayers = 2;
-        int amountToGrowPerRound = 10;
-        int initialTotalResource = 500;
+        int maxRounds = 10;
+        int maxPlayers = 4;
+        int amountToGrowPerRound = 45;
+        int initialTotalResource = 100;
         Game game = new Game(maxRounds, maxPlayers, amountToGrowPerRound, initialTotalResource);
         new ResourceGameServer().startGame(game);
     }

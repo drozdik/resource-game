@@ -1,6 +1,7 @@
 package makar.resourcegame.server;
 
 import makar.resourcegame.server.game.GameResponse;
+import makar.resourcegame.server.game.Player;
 
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -16,12 +17,14 @@ public class GamePage {
     private String roundNumber;
     private boolean waitingForRoundOver;
     private String points;
+    private String nickName;
 
-    public GamePage(GameResponse gameResponse) {
+    public GamePage(GameResponse gameResponse, Player player) {
         totalPoints = Integer.toString(gameResponse.getTotalResources());
         roundNumber = Integer.toString(gameResponse.getRoundNumber());
         waitingForRoundOver = gameResponse.isWaitForRoundOver();
         points = Integer.toString(gameResponse.getPoints());
+        nickName = player.getNickName();
     }
 
     public String getContent() {
@@ -35,6 +38,7 @@ public class GamePage {
             pageContent = pageContent.replaceAll(TOTAL_POINTS_PLACEHOLDER, totalPoints);
             pageContent = pageContent.replaceAll(ROUND_NUMBER_PLACEHOLDER, roundNumber);
             pageContent = pageContent.replaceAll(POINTS_PLACEHOLDER, points);
+            pageContent = pageContent.replaceAll("PLAYER_PLACEHOLDER", nickName);
             return pageContent;
         } catch (Exception e) {
             throw new RuntimeException(e);

@@ -2,6 +2,7 @@ package makar.resourcegame.server;
 
 import makar.resourcegame.server.game.GameResponse;
 import makar.resourcegame.server.game.GameResult;
+import makar.resourcegame.server.game.Player;
 
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -14,10 +15,12 @@ public class GameOverPage {
     private static final String REASON_PLACEHOLDER = "REASON_PLACEHOLDER";
     private final List<GameResult.PlayerScore> result;
     private final String reason;
+    private String nickname;
 
-    public GameOverPage(List<GameResult.PlayerScore> result, String reason) {
+    public GameOverPage(List<GameResult.PlayerScore> result, String reason, Player player) {
         this.result = result;
         this.reason = reason;
+        this.nickname = player.getNickName();
     }
 
     public String getContent() {
@@ -27,6 +30,7 @@ public class GameOverPage {
                 pageContent = pageContent.replaceAll("PLACE_" + number, getRecord(result.get(index)));
             }
             pageContent = pageContent.replaceAll(REASON_PLACEHOLDER, reason);
+            pageContent = pageContent.replaceAll("NICKNAME_PLACEHOLDER", nickname);
             return pageContent;
         } catch (Exception e) {
             throw new RuntimeException(e);

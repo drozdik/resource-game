@@ -29,11 +29,22 @@ public class GameServerRequestHandler implements HttpHandler {
 
     public GameServerRequestHandler(Game game) {
         this.game = game;
-        this.nicknames = List.of("player1", "player2", "player3").iterator();
+        this.nicknames = List.of("player1", "player2", "player3", "player4").iterator();
     }
 
     @Override
     public void handle(HttpExchange exchange) throws IOException {
+        try {
+            tryDoStuff(exchange);
+        } catch (Throwable throwable) {
+            LOGGER.warning(exchange.toString());
+            System.out.println(throwable);
+            throwable.printStackTrace();
+        }
+        return;
+    }
+
+    private void tryDoStuff(HttpExchange exchange) throws IOException {
         String responseContent;
         GameResponse gameResponse;
         //Player player = getPlayerBasedOn(exchange);
@@ -49,9 +60,9 @@ public class GameServerRequestHandler implements HttpHandler {
         if (gameResponse.isGameOver()) {
             List<Round> allRounds = game.getAllRounds();
             List<GameResult.PlayerScore> score = new GameResult().score(allRounds);
-            responseContent = new GameOverPage(score, gameResponse.getGameOverReason()).getContent();
+            responseContent = new GameOverPage(score, gameResponse.getGameOverReason(), player).getContent();
         } else {
-            responseContent = new GamePage(gameResponse).getContent();
+            responseContent = new GamePage(gameResponse, player).getContent();
         }
 
         // write content out
