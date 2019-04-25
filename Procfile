@@ -1,0 +1,1 @@
+web: java -Djava.net.preferIPv4Stack=true -jar target\resource-game-1.0-SNAPSHOT.jar

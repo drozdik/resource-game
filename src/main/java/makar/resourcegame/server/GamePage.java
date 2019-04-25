@@ -3,6 +3,11 @@ package makar.resourcegame.server;
 import makar.resourcegame.server.game.GameResponse;
 import makar.resourcegame.server.game.Player;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -45,10 +50,22 @@ public class GamePage {
         }
     }
 
+    public static void main(String[] args) {
+        URL resource = GamePage.class.getResource("/game-page-waiting.html");
+        System.out.println(resource);
+    }
+
     public String pageContent(String fileName) throws Exception {
-        Path path = Paths.get(getClass().getClassLoader().getResource(fileName).toURI());
-        String content = Files.readString(path, Charset.defaultCharset());
-        return content;
+        InputStream is = GamePage.class.getResourceAsStream("/" + fileName);
+        BufferedReader buf = new BufferedReader(new InputStreamReader(is));
+        String line = buf.readLine();
+        StringBuilder sb = new StringBuilder();
+        while (line != null) {
+            sb.append(line).append("\n");
+            line = buf.readLine();
+        }
+        String fileAsString = sb.toString();
+        return fileAsString;
     }
 
 }
