@@ -83,7 +83,7 @@ public class GameServerRequestHandler implements HttpHandler {
 
     private Player getPlayerBasedOnCookie(HttpExchange exchange) {
         List<String> cookie = exchange.getRequestHeaders().get("Cookie");
-        if (cookie == null || cookie.stream().filter(s -> s.startsWith("userId=")).findFirst().isEmpty()) {
+        if (cookie == null || !cookie.stream().filter(s -> s.startsWith("userId=")).findFirst().isPresent()) {
             String uuid = UUID.randomUUID().toString();
             Player newPlayer = new Player(nicknames.next());
             newPlayer.setUuid(uuid);
