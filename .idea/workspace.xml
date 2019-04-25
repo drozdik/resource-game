@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="48416de2-44ed-4bc9-9da8-3b49e01ddffa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/resource-game-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/resource-game-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
@@ -30,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="54" selection-start-column="54" selection-end-column="54" />
+              <caret column="58" lean-forward="true" selection-start-column="54" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -268,7 +267,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556222266868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556222869021" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -424,7 +423,7 @@
       <workItem from="1555435355792" duration="10790000" />
       <workItem from="1555515599592" duration="44547000" />
       <workItem from="1556212498096" duration="2075000" />
-      <workItem from="1556218325662" duration="4107000" />
+      <workItem from="1556218325662" duration="4367000" />
     </task>
     <task id="LOCAL-00001" summary="another commit">
       <created>1556217761691</created>
@@ -468,11 +467,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556222250321</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix proc">
+      <created>1556222502848</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556222502848</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68332000" />
+    <option name="totallyTimeSpent" value="68592000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -571,7 +577,8 @@
     <MESSAGE value="chenge method isEmpty" />
     <MESSAGE value="chenge method 2" />
     <MESSAGE value="remove class" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove class" />
+    <MESSAGE value="fix proc" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix proc" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -872,7 +879,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="54" selection-start-column="54" selection-end-column="54" />
+          <caret column="58" lean-forward="true" selection-start-column="54" selection-end-column="58" />
         </state>
       </provider>
     </entry>

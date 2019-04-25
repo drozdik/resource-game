@@ -12,9 +12,14 @@ import java.util.logging.Logger;
 public class ResourceGameServer {
 
     private static final Logger LOGGER = Logger.getLogger(ResourceGameServer.class.getName());
+    private final int portNumber;
+
+    public ResourceGameServer(int portNumber) {
+        this.portNumber = portNumber;
+    }
 
     public void startGame(Game game) throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(55555), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(portNumber), 0);
         HttpContext context = server.createContext("/");
         HttpHandler handler = new GameServerRequestHandler(game);
         context.setHandler(handler);
