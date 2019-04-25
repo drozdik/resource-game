@@ -11,6 +11,8 @@ import makar.resourcegame.server.game.Round;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -29,7 +31,7 @@ public class GameServerRequestHandler implements HttpHandler {
 
     public GameServerRequestHandler(Game game) {
         this.game = game;
-        this.nicknames = List.of("player1", "player2", "player3", "player4").iterator();
+        this.nicknames = new ArrayList(Arrays.asList("player1", "player2", "player3", "player4")).iterator();
     }
 
     @Override
