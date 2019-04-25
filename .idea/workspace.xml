@@ -47,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameServerRequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
-              <caret line="86" column="55" lean-forward="true" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+              <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,6 +145,7 @@
       <find>number</find>
       <find>PLACE_</find>
       <find>Creating new player</find>
+      <find>readString</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -274,7 +275,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556221903098" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556222190888" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -430,7 +431,7 @@
       <workItem from="1555435355792" duration="10790000" />
       <workItem from="1555515599592" duration="44547000" />
       <workItem from="1556212498096" duration="2075000" />
-      <workItem from="1556218325662" duration="3464000" />
+      <workItem from="1556218325662" duration="3715000" />
     </task>
     <task id="LOCAL-00001" summary="another commit">
       <created>1556217761691</created>
@@ -460,11 +461,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556221824547</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="chenge method 2">
+      <created>1556221978454</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556221978454</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67689000" />
+    <option name="totallyTimeSpent" value="67940000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -561,7 +569,8 @@
     <MESSAGE value="add maven dep plugin" />
     <MESSAGE value="procfile and loading" />
     <MESSAGE value="chenge method isEmpty" />
-    <option name="LAST_COMMIT_MESSAGE" value="chenge method isEmpty" />
+    <MESSAGE value="chenge method 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="chenge method 2" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -859,7 +868,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameServerRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="86" column="55" lean-forward="true" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+          <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
