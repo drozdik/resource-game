@@ -51,7 +51,9 @@ public class GameServerRequestHandler implements HttpHandler {
         GameResponse gameResponse;
         //Player player = getPlayerBasedOn(exchange);
         if (exchange.getRequestURI().getPath().startsWith("/favicon")) {
-            LOGGER.info("Asked for icon, skip");
+            LOGGER.info("Asked for icon, respond 404");
+            exchange.sendResponseHeaders(404, 0);//response code and length
+            exchange.close();
             return;
         }
         if (exchange.getRequestURI().getPath().endsWith("restartGame")) {
