@@ -35,7 +35,7 @@ public class Game {
         }
         roundsIterator = rounds.iterator();
         currentRound = roundsIterator.next();
-        currentRound.startWith(new ResourcePoints(initialTotalResource));
+        currentRound.startWith(new ResourcePoints(initialTotalResource-amountToGrowPerRound));
     }
 
     public synchronized GameResponse handlePlayerReadyToHarvestRequest(PlayerRequest request) {
@@ -139,7 +139,7 @@ public class Game {
         }
         roundsIterator = rounds.iterator();
         currentRound = roundsIterator.next();
-        currentRound.startWith(new ResourcePoints(initialTotalResource));
+        currentRound.startWith(new ResourcePoints(initialTotalResource-amountToGrowPerRound));
 
         LOGGER.info(String.format("RESTART GAME with %s rounds, %s players, growing %s points every round, initial resource %s ", maxRounds, maxPlayers, amountToGrowPerRound, initialTotalResource));
 
