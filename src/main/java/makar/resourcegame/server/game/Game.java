@@ -18,8 +18,17 @@ public class Game {
     private Round currentRound;
 
     private static final Logger LOGGER = Logger.getLogger(Game.class.getName());
+    private int maxRounds;
+    private int maxPlayers;
+    private int amountToGrowPerRound;
+    private int initialTotalResource;
 
     public Game(int maxRounds, int maxPlayers, int amountToGrowPerRound, int initialTotalResource) {
+        this.maxRounds = maxRounds;
+        this.maxPlayers = maxPlayers;
+        this.amountToGrowPerRound = amountToGrowPerRound;
+        this.initialTotalResource = initialTotalResource;
+
         LOGGER.info(String.format("START GAME with %s rounds, %s players, growing %s points every round, initial resource %s ", maxRounds, maxPlayers, amountToGrowPerRound, initialTotalResource));
         for (int i = 0; i < maxRounds; i++) {
             rounds.add(new Round(maxPlayers, i + 1, new ResourcePoints(amountToGrowPerRound)));
@@ -121,5 +130,18 @@ public class Game {
             }
         }
         return finished;
+    }
+
+    public void restart() {
+        rounds = new ArrayList<>();
+        for (int i = 0; i < maxRounds; i++) {
+            rounds.add(new Round(maxPlayers, i + 1, new ResourcePoints(amountToGrowPerRound)));
+        }
+        roundsIterator = rounds.iterator();
+        currentRound = roundsIterator.next();
+        currentRound.startWith(new ResourcePoints(initialTotalResource));
+
+        LOGGER.info(String.format("RESTART GAME with %s rounds, %s players, growing %s points every round, initial resource %s ", maxRounds, maxPlayers, amountToGrowPerRound, initialTotalResource));
+
     }
 }

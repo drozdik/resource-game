@@ -13,7 +13,10 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
-        int portNumber = Integer.parseInt(args[0]);
+        int portNumber = 55555;
+        if (args.length > 0) {
+            portNumber = Integer.parseInt(args[0]);
+        }
         int maxRounds = 10;
         int maxPlayers = 4;
         int amountToGrowPerRound = 45;

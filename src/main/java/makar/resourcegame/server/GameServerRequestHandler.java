@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 public class GameServerRequestHandler implements HttpHandler {
 
     private static final Logger LOGGER = Logger.getLogger(GameServerRequestHandler.class.getName());
-    private final Iterator<String> nicknames;
+    private Iterator<String> nicknames;
     private Game game;
     private Map<String, Player> playersByIp = new HashMap<>();
     private Map<String, Player> playersByUuid = new HashMap<>();
@@ -50,6 +50,17 @@ public class GameServerRequestHandler implements HttpHandler {
         String responseContent;
         GameResponse gameResponse;
         //Player player = getPlayerBasedOn(exchange);
+        if (exchange.getRequestURI().getPath().endsWith("restartGame")) {
+            playersByIp = new HashMap<>();
+            playersByUuid = new HashMap<>();
+            nicknames = new ArrayList(Arrays.asList("player1", "player2", "player3", "player4")).iterator();
+            game.restart();
+            exchange.sendResponseHeaders(200, "Game restarted".getBytes().length);//response code and length
+            OutputStream os = exchange.getResponseBody();
+            os.write("Game restarted".getBytes());
+            os.close();
+            return;
+        }
         Player player = getPlayerBasedOnCookie(exchange);
         if (exchange.getRequestMethod().equals("POST")) {
             int pointsToHarvest = new PostRequestBodyParser().parsePoints(exchange.getRequestBody());
@@ -88,6 +99,7 @@ public class GameServerRequestHandler implements HttpHandler {
         if (cookie == null || !cookie.stream().filter(s -> s.startsWith("userId=")).findFirst().isPresent()) {
             String uuid = UUID.randomUUID().toString();
             Player newPlayer = new Player(nicknames.next());
+            LOGGER.info("Request without cookie - new player" + newPlayer.getNickName());
             newPlayer.setUuid(uuid);
             playersByUuid.put(uuid, newPlayer);
             return newPlayer;

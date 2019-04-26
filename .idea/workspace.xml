@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="48416de2-44ed-4bc9-9da8-3b49e01ddffa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/makar/resourcegame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/makar/resourcegame/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameServerRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameServerRequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/resource-game-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/resource-game-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,10 +31,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/ResourceGameServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+              <folding>
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="58" lean-forward="true" selection-start-column="54" selection-end-column="58" />
+              <caret column="90" selection-start-column="90" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -37,20 +67,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameServerRequestHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="56" column="50" lean-forward="true" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+            <state relative-caret-position="143">
+              <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/game-page-waiting.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -58,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="31" column="70" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="70" />
+            <state relative-caret-position="134">
+              <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2525#2526#0" expanded="true" />
@@ -67,6 +88,15 @@
                 <element signature="e#2961#2962#0" expanded="true" />
                 <element signature="e#3008#3009#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Iterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -87,16 +117,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameOverPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/game-over-page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
@@ -105,7 +126,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#971#972#0" expanded="true" />
@@ -135,9 +156,10 @@
       <find>Creating server instance</find>
       <find>number</find>
       <find>PLACE_</find>
-      <find>Creating new player</find>
       <find>readStrin</find>
       <find>readString</find>
+      <find>rest</find>
+      <find>Creating new player</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,25 +179,25 @@
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/PlayersScore.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/PlayerRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/ResourcePoints.java" />
-        <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/ResourceGameServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/PostRequestParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/PostRequestBodyParser.java" />
         <option value="$PROJECT_DIR$/src/main/resources/game-page.html" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/GameResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Round.java" />
-        <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/GameResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Player.java" />
         <option value="$PROJECT_DIR$/src/main/resources/game-page-waiting.html" />
         <option value="$PROJECT_DIR$/src/main/resources/game-over-page.html" />
         <option value="$PROJECT_DIR$/src/main/resources/game-page-active.html" />
-        <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GamePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameOverPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameServerRequestHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/ResponseBodyCreator.java" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/ResourceGameServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameServerRequestHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/makar/resourcegame/Main.java" />
       </list>
     </option>
   </component>
@@ -196,10 +218,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="343" />
-    <option name="y" value="-9" />
-    <option name="width" value="1873" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="942" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -255,7 +276,47 @@
             <path>
               <item name="resource-game" type="b2602c69:ProjectViewProjectNode" />
               <item name="resource-game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resourcegame" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resource-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="resource-game" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resource-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="resource-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="resource-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resource-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="resource-game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -267,7 +328,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556222869021" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556254464757" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -312,9 +373,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GamePage">
+  <component name="RunManager" selected="Application.Main with ipv4">
     <configuration name="GamePage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="makar.resourcegame.server.GamePage" />
+      <module name="resource-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="makar.resourcegame.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameServerRequestHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="makar.resourcegame.server.GameServerRequestHandler" />
       <module name="resource-game" />
       <extension name="coverage">
         <pattern>
@@ -330,19 +404,6 @@
       <option name="MAIN_CLASS_NAME" value="makar.resourcegame.Main" />
       <module name="resource-game" />
       <option name="VM_PARAMETERS" value="-Djava.net.preferIPv4Stack=true" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="makar.resourcegame.server.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResponseBodyCreatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="makar.resourcegame.server.ResponseBodyCreatorTest" />
-      <module name="resource-game" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="makar.resourcegame.server.game.*" />
@@ -393,18 +454,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main with ipv4" />
-      <item itemvalue="Application.ResponseBodyCreatorTest" />
       <item itemvalue="Application.TestMain" />
       <item itemvalue="Maven.resource-game [package]" />
       <item itemvalue="Application.GamePage" />
+      <item itemvalue="Application.GameServerRequestHandler" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GamePage" />
         <item itemvalue="Application.Main with ipv4" />
+        <item itemvalue="Application.GameServerRequestHandler" />
+        <item itemvalue="Application.GamePage" />
         <item itemvalue="Maven.resource-game [package]" />
         <item itemvalue="Application.TestMain" />
-        <item itemvalue="Application.ResponseBodyCreatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -423,7 +484,7 @@
       <workItem from="1555435355792" duration="10790000" />
       <workItem from="1555515599592" duration="44547000" />
       <workItem from="1556212498096" duration="2075000" />
-      <workItem from="1556218325662" duration="4367000" />
+      <workItem from="1556218325662" duration="7630000" />
     </task>
     <task id="LOCAL-00001" summary="another commit">
       <created>1556217761691</created>
@@ -474,11 +535,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556222502848</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change port">
+      <created>1556222915807</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556222915807</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68592000" />
+    <option name="totallyTimeSpent" value="71855000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,10 +558,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
+    <frame x="-7" y="0" width="942" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18863761" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3877551" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -502,12 +570,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24402907" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.24714434" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24633123" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5285566" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.38836968" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.38836968" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -517,7 +585,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" sideWeight="0.498452" visible="true" weight="0.15388858" />
+      <window_info anchor="right" id="Maven" order="3" sideWeight="0.498452" visible="true" weight="0.31632653" />
       <window_info anchor="right" id="PlantUML" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -578,10 +646,28 @@
     <MESSAGE value="chenge method 2" />
     <MESSAGE value="remove class" />
     <MESSAGE value="fix proc" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix proc" />
+    <MESSAGE value="change port" />
+    <option name="LAST_COMMIT_MESSAGE" value="change port" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Player.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>exchange.getRequestURI().getPath().endsWith(&quot;restartGame&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>cookie.stream().filter(s -&gt; s.startsWith(&quot;userId=&quot;)).findFirst().get()</expression-string>
         <language-id>JAVA</language-id>
@@ -621,11 +707,6 @@
       </expression>
       <expression>
         <expression-string>exchange.getRemoteAddress()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>exchange.getRemoteAddress().getAddress()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -678,13 +759,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/game-page-backup.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/ResourceGameServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/game-page.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/GameResponse.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -775,16 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -799,36 +863,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="70" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2525#2526#0" expanded="true" />
-            <element signature="e#2592#2593#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#3008#3009#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/game-over-page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#998#999#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -845,7 +883,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameOverPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>
@@ -866,20 +904,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="90" selection-start-column="90" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/Iterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/ResourceGameServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="48" lean-forward="true" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+          <folding>
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2525#2526#0" expanded="true" />
+            <element signature="e#2592#2593#0" expanded="true" />
+            <element signature="e#2961#2962#0" expanded="true" />
+            <element signature="e#3008#3009#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/game/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/server/GameServerRequestHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="56" column="50" lean-forward="true" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
+        <state relative-caret-position="143">
+          <caret line="53" column="32" lean-forward="true" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/src/main/java/makar/resourcegame/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="58" lean-forward="true" selection-start-column="54" selection-end-column="58" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
