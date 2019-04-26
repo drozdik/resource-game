@@ -18,7 +18,7 @@ public class Main {
             portNumber = Integer.parseInt(args[0]);
         }
         int maxRounds = 10;
-        int maxPlayers = 4;
+        int maxPlayers = 3;
         int amountToGrowPerRound = 45;
         int initialTotalResource = 100;
         Game game = new Game(maxRounds, maxPlayers, amountToGrowPerRound, initialTotalResource);
