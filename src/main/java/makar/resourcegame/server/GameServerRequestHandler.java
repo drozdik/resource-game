@@ -66,6 +66,7 @@ public class GameServerRequestHandler implements HttpHandler {
             int pointsToHarvest = new PostRequestBodyParser().parsePoints(exchange.getRequestBody());
             PlayerRequest request = new PlayerRequest(player, pointsToHarvest);
             PlayerRequest playerRequest = request;
+            LOGGER.info("Player " + playerRequest.getPlayer().getNickName() + " wanted to harvest " + playerRequest.getHarvestedPoints());
             gameResponse = game.handlePlayerReadyToHarvestRequest(playerRequest);
         } else {
             gameResponse = game.updateStateRequest(player);
@@ -73,6 +74,11 @@ public class GameServerRequestHandler implements HttpHandler {
         if (gameResponse.isGameOver()) {
             List<Round> allRounds = game.getAllRounds();
             List<GameResult.PlayerScore> score = new GameResult().score(allRounds);
+            LOGGER.info("Game result");
+            for (GameResult.PlayerScore playerScore : score) {
+                LOGGER.info(playerScore.getPlayer().getNickName() + " : " + playerScore.getTotalHarvest().getValue());
+            }
+            LOGGER.info("Game result ");
             responseContent = new GameOverPage(score, gameResponse.getGameOverReason(), player).getContent();
         } else {
             responseContent = new GamePage(gameResponse, player).getContent();
@@ -103,14 +109,14 @@ public class GameServerRequestHandler implements HttpHandler {
             newPlayer.setUuid(uuid);
             playersByUuid.put(uuid, newPlayer);
             return newPlayer;
-        }else{
+        } else {
             String cookieValue = cookie.stream().filter(s -> s.startsWith("userId=")).findFirst().get().split("=")[1];
-            if(!playersByUuid.containsKey(cookieValue)){
+            if (!playersByUuid.containsKey(cookieValue)) {
                 Player newPlayer = new Player(nicknames.next());
                 newPlayer.setUuid(cookieValue);
                 playersByUuid.put(cookieValue, newPlayer);
                 return newPlayer;
-            }else {
+            } else {
                 return playersByUuid.get(cookieValue);
             }
         }
