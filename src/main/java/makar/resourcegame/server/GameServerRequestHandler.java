@@ -50,6 +50,10 @@ public class GameServerRequestHandler implements HttpHandler {
         String responseContent;
         GameResponse gameResponse;
         //Player player = getPlayerBasedOn(exchange);
+        if (exchange.getRequestURI().getPath().startsWith("/favicon")) {
+            LOGGER.info("Asked for icon, skip");
+            return;
+        }
         if (exchange.getRequestURI().getPath().endsWith("restartGame")) {
             playersByIp = new HashMap<>();
             playersByUuid = new HashMap<>();
@@ -78,7 +82,6 @@ public class GameServerRequestHandler implements HttpHandler {
             for (GameResult.PlayerScore playerScore : score) {
                 LOGGER.info(playerScore.getPlayer().getNickName() + " : " + playerScore.getTotalHarvest().getValue());
             }
-            LOGGER.info("Game result ");
             responseContent = new GameOverPage(score, gameResponse.getGameOverReason(), player).getContent();
         } else {
             responseContent = new GamePage(gameResponse, player).getContent();
